@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+section{padding:60px 0px;}
+	#header.menuhide{top:-160px;}
+	#header{top:50px;background-color: rgba(42,189,187,0.9) !important;transition: all 1s;} #header.header-md #topNav a.logo>img{height:120px;margin-top:-25px;}#topNav a.logo{overflow:inherit;}
+	#topMain.nav-pills>li>a {color: #fff;font-weight: 400;background-color: transparent;}
+	body,p{font-size:16px;}
+	h5#bannersvgbelowtext{margin-top:-100px !important;}
+	#section0{background: url(images/Section-1.jpg);background-size:cover;margin-top: -80px;}
+	#section1{background: url(images/Section-2.jpg);background-size:cover;}
+	#section2{background: url(images/Section-3.jpg);background-size:cover;}
+	#section3{background: url(images/Section-4.jpg);background-size:cover;}
+	#section4{background: url(images/Section-5.jpg);background-size:cover;}
+	#section5{background: url(images/Section-6.jpg);background-size:cover;padding:40px 0px;}
+	
+	#section1 p{margin-top:10px;margin-bottom:0px;color:#f1f3f4;}#section0 .container{padding-top:100px;}
+	#section1 h4{margin-top:10px;color: #f1f3f4;font-size: 30px;font-family: BubblegumSans-Regular, Bubblegum Sans;}
+	
+	#section0 p{margin-top:10px;margin-bottom:0px;color:#fff;width:90%;}
+	#section0 h1{margin-top:10px;margin-bottom:-20px;font-size: 70px;font-family: BubblegumSans-Regular, Bubblegum Sans;color:#fff;}
+	#section1 h2{margin-bottom:00px;font-size: 70px;font-family: BubblegumSans-Regular, Bubblegum Sans;color:#fff;}
+	#section0 h5{margin-top:10px;font-size: 20px;font-family: BubblegumSans-Regular, Bubblegum Sans;color:#fff;}
+	
+	#section2 h2{margin-top:10px;color: #fff;font-size: 50px;font-family: BubblegumSans-Regular, Bubblegum Sans;}
+	#section2 p{margin-top:10px;margin-bottom:0px;color:#fff;}
+	#anglearrow1{position: absolute;right: 30%;top: 45%;width: 40%;}
+	#anglearrow2{position: absolute;right: 32%;top: 62%;width: 38%;}
+	#section3 h2{color: #fff;font-size: 50px;font-family: BubblegumSans-Regular, Bubblegum Sans;margin-bottom:15px;}
+	#section3 p{color:#fff;margin-bottom:40px;}
+	#section3 a{color:#592465;background:#FBB040;padding:10px 20px;border-radius: 10px;font-weight:600;}
+	#section5 p{color:#fff;margin-bottom:10px;}#section5 p a{color:#fff;}#section5 p a img{padding:5px;width:40px;}
+	#section4 h2{margin-top:10px;color: #fff;font-size: 50px;font-family: BubblegumSans-Regular, Bubblegum Sans;}
+	#catsideview{position: absolute;right: -50%;top: 0;width: 100%;}
+    .subway-item::after{position: absolute;right: 0;top: 30%;content: '';display: inline-block;width: 15px;height: 15px;-moz-border-radius: 7.5px;-webkit-border-radius: 7.5px;border-radius: 7.5px;background-color: #fff;}
+    #bannersvg{width:100%;margin-top:-170px;}
+    #footersvg{width:125%;}
+    .modal-header .close {
+    margin-top: -45px;margin-right: 10px;
+}
+.modal-header {
+    padding: 15px 0px;
+   border-bottom:none;
+}
+.modal-content{border:none;}
+.modal-header h2{color:#FBB040;font-size:25px;}
+.appointmentinput{width:100%;height:40px;padding-left:10px;margin-bottom:20px;border-radius:10px;border:2px solid #FBB040;;}
+.appointmentsubmit{width:100%;height:40px;color: #592465; background: #FBB040;border:none;border-radius:10px;font-weight:bold;}
+    @media (max-width:767px){
+        #googlemap{margin-top:20px;}
+        .imgcolumn1,.imgcolumn2,.imgcolumn3{text-align:center;}
+        .mobilewidth{width:70% !important;}
+        #section0 h1{font-size:40px;line-height:45px;margin-bottom:10px;}
+        #section1 h2{font-size:65px;margin-bottom:10px;}
+        #section0 p {width:100%;}
+        .marginbottom{margin-bottom:0px !important;}
+        h5#bannersvgbelowtext {
+    margin-top: -50px !important;
+}
+#bannersvg {
+       width: 200%;
+       margin: auto;
+    margin-left: -170px;
+    margin-top: -110px;
+}
+#mobilewidthmore{width:100%;}
+#catsideview{top:90px;width:120%;right:-41.5%;}
+#section1 h1{line-height:50px;}
+#section2 h2,#section4 h2{font-size:45px;}
+.marginbottom2{margin-bottom:15px !important;}
+.subway-item::after{display:none;}
+#footersvg {
+    width: 150%;
+    margin-left: -80px;
+    margin-top: 40px;
+}
+.contentcolumn5{text-align:center !important;padding-top: 30px;}
+#section1 p{width:100%;}
+    }
+    @media (min-width:768px) and (max-width:991px){
+        .contentcolumn5.text-right{text-align:left !important;}
+        #googlemap{margin-top:30px;}
+        #catsideview{right:-35%;}
+        #bannersvg{margin-top:-120px;}
+        h5#bannersvgbelowtext{margin-top:-60px !important;}
+        #section0 h1{font-size:65px;}
+        #section1 h2{font-size:65px;margin-bottom:10px;}
+        #section1 p{width:100%;}
+        .marginbottom{margin-bottom:0px !important;}
+        .marginbottom2{margin-bottom:30px !important;}
+        #anglearrow1 {
+    right: 30%;
+    top: 43%;}
+    #footersvg {
+    width: 150%;
+    margin-left: -100px;
+}
+    }
+    @media (min-width:992px) and (max-width:1199px){
+       #bannersvg {
+    margin-top: -135px;
+} 
+h5#bannersvgbelowtext {
+    margin-top: -80px !important;
+}
+    }
+    @media (min-width:1200px){}
+    @media only screen and (max-width: 992px){
+        #topNav nav.nav-main{margin-left:30%;}
+        #header #topNav a.logo>img {
+    max-height: 100px!important;
+    margin-top: -20px !important;
+}
+#topNav nav.nav-main {
+    background-color: rgba(42,189,187,0.9) !important;
+}
+#header.header-md #topMain.nav-pills>li>a, #header.header-sm #topMain.nav-pills>li>a {
+    color: #fff;
+}      
+    }
+#topNav button.btn-mobile {
+    color: #fff;
+}
+.marginpadding0{padding:0px !important;margin:0px !important;}
+.paddingright0{padding-right:0px;}
+.paddingleft0{padding-left:0px;}
+.noweasy{font-size:20px;font-weight:bold;}
+	</style>
+<body>
+
+
+	<section class="section" id="section0">
+	    <div class="container">
+	        <div class="col-md-1 marginbottom"></div>
+	        <div class="col-md-10 text-center">
+	             <h1>welcome to pampered paws</h1>
+	             
+                  <div 
+       id="bannersvg"
+       class="lottie" 
+       data-animation-path="images/puppy-animation.json" 
+       data-autoplay="true" 
+       data-rederer="svg" 
+       data-anim-loop="true" 
+       data-name="Lottie Animation"
+   ></div>
+   <h5 id="bannersvgbelowtext">a pawradise for pets, pet care and pet parents.</h5>
+	            <p>As pet parents and pet lovers, we have always treated, cared for, and loved our pets more than we can bind with words. At Pampered Paws, we aim to offer the highest quality of attention, experience and pet grooming services through our wide range of products and expertise.</p>
+
+	        </div>
+	        <div class="col-md-1 marginbottom"></div>
+	    </div>
+	    </section>
+	<section class="section" id="section1">
+	    <div class="container">
+	        <div class="col-md-1"></div>
+	        <div class="col-md-10 marginbottom text-center">
+	            <div class="row">
+	                <div class="col-md-3 col-sm-3 marginpadding0" ></div>
+	                <div class="col-md-3 col-sm-3 col-xs-6 marginbottom paddingright0"><img src="images/woof.png" class="img-responsive" alt="woof" title="woof"/></div>
+	                <div class="col-md-3 col-sm-3 col-xs-6 marginbottom paddingleft0"><img src="images/meow.png" class="img-responsive"  alt="meow" title="meow" /></div>
+	                <div class="col-md-3 col-sm-3 marginpadding0" ></div>
+	            </div>
+	            <div class="row">
+	                <div class="col-md-4 col-sm-4 col-xs-3 marginpadding0" ></div>
+	                <div class="col-md-4 col-sm-4 col-xs-6 marginbottom"><img src="images/and.png"  alt="and" title="and"/><br>
+	                <img id="mobilewidthmore" src="images/more.png"  alt="more" title="more" class="padding-15" /></div>
+	                <div class="col-md-4 col-sm-4 col-xs-3 marginpadding0" ></div>
+	            </div>
+	            <h2>pet care</h2>
+	            <p class="noweasy">now easy & convenient!</p>
+	            <p>Imagine coming home after a tough, long day and being greeted by your four-legged furry friend wrapping itself around your legs with a grin. They make us forget all our worries and remind us of lifes most important ingredient, unconditional love. This bonding and love are what bring us together.</p> 
+	            <p>With a pet in our lives, we are</p>
+	            <h4>a complete family</h4>
+	           
+  <div 
+       id="catsideview"
+       class="lottie" 
+       data-animation-path="images/Kitten_Animated.json" 
+       data-autoplay="true" 
+       data-rederer="svg" 
+       data-anim-loop="true" 
+       data-name="Lottie Animation"
+   ></div>
+
+	       </div>
+	        <div class="col-md-1"></div>
+	    </div>
+	</section>
+	<section class="section" id="section2"> 
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-12 marginbottom">
+	              <h2>how it all started</h2>  
+	              <div class="row">
+	                  <div class="col-md-1 col-sm-1 marginpadding0"></div>
+	                  <div class="col-md-3 col-sm-3 marginbottom2 imgcolumn1">
+	                     <img src="images/Explorer-doggo.png" class="img-responsive mobilewidth" alt="Explorer dog" title="Explorer dog"/> 
+	                  </div>
+	                  <div class="col-md-7 col-sm-7 marginbottom2 contentcolumn1">
+	                      <div class="display-table">
+        <div class="display-table-cell" style="vertical-align:middle;">
+	                      <p>Being a pet parent and considering our pet as part of our human family, with zero differentiators between two-legs and four-legs! Our journey began with a wide discovery of pet stores in the city. Only a handful met our expectations offering a certain experience to us as customers.</p>
+	                </div></div>  </div>
+	                <div class="col-md-1 col-sm-1 marginpadding0"></div>
+	              </div>
+	              
+	              <img src="images/arrow-1.png" id="anglearrow1" alt="Pampered Paws"  title="Pampered Paws" class="hidden-xs"/> 
+	              
+	              <div class="row">
+	                  <div class="col-md-1 col-sm-1 marginpadding0"></div>
+	                  <div class="col-md-3 col-sm-3 col-md-push-7 col-sm-push-7 marginbottom2 imgcolumn2">
+	                     <img src="images/Investigator-Doggo.png" class="img-responsive mobilewidth" alt="Investigator Dog" /> 
+	                  </div>
+	                  <div class="col-md-7 col-sm-7 col-md-pull-3 col-sm-pull-3  marginbottom2 contentcolumn2">
+	                      <div class="display-table">
+        <div class="display-table-cell" style="vertical-align:middle;">
+	                      <p>We wanted to go above and beyond for our furry friends by providing a wide range of choices to satisfy their needs and become a memorable destination for pet parents in the city.</p>
+	                </div></div>  </div>
+	                
+	                <div class="col-md-1 col-sm-1 marginpadding0"></div>
+	              </div>
+	              
+	              <img src="images/arrow-2.png" id="anglearrow2" alt="Pampered Paws" title="Pampered Paws" class="hidden-xs"/> 
+	              
+	               <div class="row">
+	                  <div class="col-md-1 col-sm-1 marginpadding0"></div>
+	                  <div class="col-md-3 col-sm-3 marginbottom2 imgcolumn3">
+	                     <img src="images/Cool-Doggo.png" class="img-responsive mobilewidth" alt="Cool Dog" title="Cool Dog"/> 
+	                  </div>
+	                  <div class="col-md-7 col-sm-7 marginbottom2 contentcolumn3">
+	                      <div class="display-table">
+        <div class="display-table-cell" style="vertical-align:middle;">
+	                      <p>We opened our first store with a spa, all for our awesome pawsome friends. We want to offer a seamless and comprehensive experience where anyone with a pet can meet all their needs.</p>
+	                </div></div>  </div>
+	                <div class="col-md-1 col-sm-1 marginpadding0"></div>
+	              </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>dogs</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="all.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+ <!--  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');-->
+<style>   
+	 .hidden{
+	   display:none;
+  }
+	
+.k{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif
+}
+body{
+	background-image:linear-gradient( to right, #eecda3, #ef629f);
+}
+.l
+{
+    min-width: 100vw;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #16384c;
+}
+
+.container .card
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover
+{
+    height: 450px;
+}
+.container .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px){
+    .container .card .imgContainer{
+        left: -2px;
+    }
+}
+.modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    right: 0px;
+}
+.modal-content {
+    height: 100%;
+}
+</style>
+<body>
+  <section class="colored-section" id="title" style="background-color: pink ">
+
+    <div class="container-fluid" style="font-size:17px">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark" style="font-size:17px">
+      <div class="btn" onclick="history.back()">
+		<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+</svg></div>
+        <a class="navbar-brand" href="" style="color:black;padding-left:1px;font-size: 20px"><b>Paws & Tails</b></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav mr-auto justify-content-left">
+          <li class="nav-item">
+              <a class="nav-link" href="MainPage.html" style="color:black">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html" style="color:black">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html" style="color:black">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="LoginSignin.html" style="color:black">Log Out</a>
+            </li>
+            <li class="nav-item">
+						<div type="button" class="btnn"
+								data-bs-toggle="modal" data-bs-target="#exampleModal">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  								<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  									<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+							</svg></div> 
+							<div class="modal fade" id="exampleModal" tabindex="-1"
+								aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel" style="color:black">You'r Profile</h5>
+											<button type="button" class="btn-close"
+												data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<img class="rounded" style="width: 30%;height: 30%" src="pro.png">
+										<div class="modal-body" style="color:black">
+												<div class="row">
+													<div class="col-4">User Name</div>
+													<div class="col-2">:</div>
+													<div class="col-6">Nandhu</div>
+												</div>
+												<div class="row">
+													<div class="col-4">Address</div>
+													<div class="col-2">:</div>
+													<div class="col-6">5/25,Max complex,ukkadam,cbe</div>
+												</div>
+												<div class="row">
+													<div class="col-4">E-mail</div>
+													<div class="col-2">:</div>
+													<div class="col-6">nandhu@gmail.com</div>
+												</div>
+										
+										
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary"
+												data-bs-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Edit
+												</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Title -->
+  </section>  
+  <section class="home" id="home">
+
+    <div class="content">
+        <h3> <span>hi</span> welcome to our pet shop </h3>
+        <a href="#dogcategory" class="btn">shop now</a>
+    </div>
+
+    <!--  <img src="bottom_wave.png" class="wave" alt="">-->
+
+</section>
+  <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap " id="dogcategory" style="padding-top:10%;font-size: 15px">
+      
+       <a href="payment.html" style="text-decoration: none">
+       
+        <div class="card d-flex position-relative flex-column">
+            <div class='imgContainer'>
+                <img src='lab.webp'>
+                <h2>Labrador</h2>
+            </div>
+            <div class="content">
+                <p>Labrador dog's will grow up to 0.8 meter and weight from 28kg to 32 kg.
+                Labrador Dog's are black,yellow,chocolate shades with some white Markings.
+                The price of the Dog ranges from 7000 to 10000</p>
+                <br>Click to buy.
+            </div>    
+  		</div></a>
+  		
+  		<a href="payment.html" style="text-decoration: none">
+        <div class="card d-flex position-relative flex-column">
+            <div class='imgContainer'>
+                <img src="husky.jfif">
+                <h2>Husky</h2>
+            </div>
+            <div class="content">
+                <p>Siberian Husky dog's will grow up to 0.56 meter and weight from 20kg to 27 kg.
+                Husky Dog's are white,grey-white,red-white shades with some white Markings.
+                The price of the Dog ranges from 30000 to 45000</p>
+                <br>Click to buy.
+  		</div>
+        </div>
+        </a>
+        <a href="payment.html" style="text-decoration: none">
+        <div class="card d-flex position-relative flex-column">
+            <div class='imgContainer'>
+                <img src='golden.webp'>
+                <h2>Golden Retriever</h2>
+            </div>
+            <div class="content">
+                
+                <p>Golden Retriver dog's will grow up to 0.56 meter and weight from 30kg to 34 kg.
+                Retriever Dog's are Dark-golden,light-golden,cream shades with some white Markings.
+                The price of the Dog ranges from 10000 to 20000</p>
+                <br>Click to buy.
+           </div>
+        </div>
+        </a>
+        <a href="payment.html" style="text-decoration: none">
+        <div class="card d-flex position-relative flex-column">
+            <div class='imgContainer'>
+                <img src='beagle.jpg'>
+                <h2>Beagle</h2>
+            </div>
+            <div class="content">                
+                 <p>Beagle dog's will grow up to 0.4 meter and weight from 20kg to 23kg.
+                Beagle Dog's are Lemon-white,Tri-color,Orange-white shades with some white Markings.
+                The price of the Dog ranges from 10000 to 15000</p>
+                <br>Click to buy.
+  			</div>
+        </div>
+        </a>
+    </div> 
+    
+    <section class="about" id="about">
+
+    <div class="image">
+        <img src="about_img.png" alt="">
+    </div>
+
+    <div class="content">
+        <h3>premium <span>pet food</span> manufacturer</h3>
+        <p>Organic dog food is becoming increasingly popular as pet parents strive to 
+        give their furry friends the best possible diet. However, with so many products on the market,
+         it can be hard to know where to start.To help you make an informed decision,Here some are,</p>
+    </div>
+	
+	<div class="dog-food">
+
+    <div class="image">
+        <img src="dog_food.png" alt="">
+    </div>
+
+    <div class="content">
+        <h3> <span>air dried</span> dog food </h3>
+        <p>Unlike conventional dry foods that are mass produced and cooked at high temperatures, our foods are
+         handcrafted and gently air-dried in our kitchens.</p>
+        <div class="amount"></div>
+        <a href="#shop"> <img src="shop_now_dog.png" alt=""> </a>
+    </div>
+</div>
+
+
+
+<section class="shop" id="shop">
+
+    <h1 class="heading"> our <span> products </span> </h1>
+
+    <div class="box-container">
+	<div class='row'>
+        <div class="box col">
+            <div class="image">
+                <a href="orderplaced.html"><img src="product_01.jpg" alt=""></a>
+            </div>
+            <div class="content">
+                <h3>air-dried food</h3>
+                <div class="amount"> Rs:500</div>
+            </div>
+        </div>
+
+        <div class="box col">
+            <div class="image">
+                <a href="orderplaced.html"><img src="product_02.jpg" alt=""></a>
+            </div>
+            <div class="content">
+                <h3>air-dried food</h3>
+                <div class="amount"> Rs:800 </div>
+            </div>
+        </div>
+ 	</div>
+ 	<div class='row'>
+        <div class="box col">
+            <div class="image">
+                <a href="orderplaced.html"><img src="product_03.jpg" alt=""></a>
+            </div>
+            <div class="content">
+                <h3>air-dried food</h3>
+                <div class="amount">Rs:1500</div>
+            </div>
+        </div>
+
+        <div class="box col">
+            <div class="image">
+               <a href="orderplaced.html"> <img src="product_04.jpg" alt=""></a>
+            </div>
+            <div class="content">
+                <h3>air-dried food</h3>
+                <div class="amount">Rs:800</div>
+            </div>
+        </div>
+	</div>
+	<div class='row'>
+        <div class="box col">
+            <div class="image">
+               <<a href="orderplaced.html"> <img src="product_06.jpg" alt=""></a>
+            </div>
+            <div class="content">
+                <h3>air-dried food</h3>
+                <div class="amount"> Rs:1500 </div>
+            </div>
+        </div>
+    <div class="col"></div>
+    </div>
+</div>
+</section>
+
+</section>
+
+<a href="MainPage.html" style="padding-left:40%"><button class="btn">Back to Home</button></a>
+    
+    
+    
+<div class=" admin">
+	<div class="addbtn">
+		<button type="button" onclick="addelement()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+</svg></button>
+	</div>
+</div>
+<div class="addcontent hidden" style="padding-left:20%">
+	<form>
+		<table>
+			<tr>
+				<td>Enter the breed of the Dog</td>
+				<td>:</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Enter the color of the Dog</td>
+				<td>:</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Enter the height of the Dog</td>
+				<td>:</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Enter the weight of the Dog</td>
+				<td>:</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Enter the Price of the Dog</td>
+				<td>:</td>
+				<td><input type="text"></td>
+			</tr>
+		</table>
+	</form><br>
+	<button class="btn-primary" onclick="addsuccess()">click to Add</button>
+</div>
+</body>
+<script src="Addingnewelement.js"></script>
+<script src="general.js"></script>
+<script>
+</script>
+</html>

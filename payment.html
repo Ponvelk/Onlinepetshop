@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Payment</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="all.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body style="  background-image:linear-gradient(to right, #eecda3, #ef629f);">
+<section class="colored-section" id="title" style="background-color: pink ">
+
+    <div class="container-fluid" style="font-size:17px">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark" style="font-size:17px">
+      <div class="btn" onclick="history.back()">
+		<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+</svg></div>
+        <a class="navbar-brand" href="" style="color:black;padding-left:1px;font-size: 20px"><b>Paws & Tails</b></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav mr-auto justify-content-left">
+          <li class="nav-item">
+              <a class="nav-link" href="MainPage.html" style="color:black">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html" style="color:black">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html" style="color:black">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="LoginSignin.html" style="color:black">Log Out</a>
+            </li>
+            <li class="nav-item">
+						<div class="btnn" style="padding-left:10px">
+							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  								<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  									<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+							</svg>
+						</div>
+						</li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Title -->
+  </section> 
+<div>
+<img style="width: 100%" src="doghome1.jpg" ><br><br><br>
+<h1><span style="color:#e67e22;padding-left: 20px">Take</span> your pet to your Home...</h1>
+<h3 style="padding-left: 20px">choose the pet on your'e <span style="color:#e67e22">Wish...</span></h3>
+<br>
+<p>
+	<div class="row" style="font-size: 18px;padding-left: 20%">
+		<div class="col-5">Enter pet's color:</div>
+		<div class="col-5"><input type="text"></div>
+	</div><br>
+	<div class="row" style="font-size: 18px;padding-left: 20%">
+		<div class="col-5">Enter pet's gender:</div>
+		<div class="col-5"><input type="text"></div>
+	</div><br>
+</p>
+</div>
+<div style="padding-left:40%">
+<button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Check Availability
+</button>
+</div>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel"><span style="color:#e67e22">You</span> founded Yours.</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      	<div class="row" style="font-size: 18px">
+			<div class="col-5">Enter Pincode:</div>
+			<div class="col-5"><input type="text" style="border-color: black"></div>
+		</div><br>
+        <div class="row" style="font-size: 18px">
+			<div class="col-5">Enter Shipping Address:</div>
+			<div class="col-5"><textarea></textarea></div>
+	</div><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="location.replace('orderplaced.html');">Place Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  <h1>You are requested to Enter the Details........</h1>
+<div class="pay"><br>
+
+<!-- Details of pet 
+
+<h2>User Details</h2>
+<form action="orderplaced.html">
+	<table class="table">
+		<tr>
+		 <td>First Name</td><td>:</td><td><input type="text"></td>
+		</tr>
+		<tr>
+		 <td>Last Name</td><td>:</td><td><input type="text"></td>
+		</tr>
+		<tr>
+		 <td>DOB</td><td>:</td><td><input type="text"></td>
+		</tr>
+		<tr>
+		 <td>Gender</td><td>:</td><td><input type="text"></td>
+		</tr>
+		<tr>
+		 <td>Address</td><td>:</td><td><input type="text"></td>
+		</tr>
+		<tr>
+		 <td>Shipping Address</td><td>:</td><td><input type="text"></td>
+		</tr>
+		<br>
+	</table>
+	
+	<!-- Details of pet 
+	
+	<h2>Pet Details</h2>
+	<table class="table">
+		<tr>
+		 <td>Category</td><td>:</td><td><input type="radio"  name="category">Dog<br>
+		 								<input type="radio"  name="category">Cat<br>
+		 								<input type="radio"  name="category">Bird<br>
+		 	</td>
+		 	</tr>
+		<tr>
+		 <td>Breed Name</td><td>:</td><td><input type="text"></td>
+		</tr>
+		<tr>
+		 <td>Color</td><td>:</td><td><input type="text"></td>
+		</tr>
+		<tr>
+		 <td>Gender</td><td>:</td><td><input type="radio"  name="petgender">Male<br>
+									  <input type="radio"  name="petgender">Female
+		 </td>
+		</tr>
+		<tr>
+		 <td>Vaccination</td><td>:</td><td><input type="radio" name="vacci">Yes<br>
+		 <input type="radio" name="vacci">No
+		</tr>
+		
+		<tr>
+		 <td>Shipping Address</td><td>:</td><td><input type="text"></td>
+		</tr>
+		<br>		
+	</table>
+	<div style="padding-left:50%">
+	<button class="btn btn-dark" type="submit">Continue</button>
+	</div>
+	</form>
+</div>
+-->
+</body>
+<script src="general.js"></script>
+<script >
+	function available() {
+	 		 document.querySelector(".addcontent").classList.remove("hidden");		
+	}
+</script>
+</html>
